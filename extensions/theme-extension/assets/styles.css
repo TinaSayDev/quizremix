@@ -1,0 +1,294 @@
+.larger-font {
+  font-size: 20px;
+}
+
+.popup {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  color: #1D3059;
+  box-sizing: border-box;
+  display: none;
+  position: relative;
+  max-width: 650px;
+  height: 550px;
+  background-color: #fff;
+  border: 8px solid #1d30598c;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px;
+  animation: fade-in 0.5s ease-in;
+}
+
+.popup-header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 26px;
+  color: #1D3059;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.popup-paragraph {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1D3059;
+  margin-bottom: 20px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  transform: translateY(-30px);
+}
+
+.upper-margin {
+  margin-top: 20px;
+}
+
+.popup-logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.popup-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1D3059;
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+}
+
+.popup-login {
+  display: flex;
+  gap: 4px;
+  align-items: self-end;
+}
+
+.popup-login-link {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #1D3059;
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+  cursor: pointer;
+}
+
+.popup-button {
+  padding: 10px 20px;
+  background-color: #1D3059;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20.5px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in;
+}
+
+.powered-by {
+  position: absolute;
+  bottom: -170px;
+  right: 0;
+  font-size: 15.3px;
+  color: #1D3059;
+  text-decoration: none;
+}
+
+.policy {
+  position: absolute;
+  bottom: -130px;
+  right: 0;
+}
+
+.policy, .policy a {
+  font-size: 13px;
+}
+
+.slides {
+  text-align: center;
+  transform: translateY(-30px);
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.close-icon {
+  color: #1d3059;
+  opacity: 0.59;
+  border-radius: 10px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: x-large;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.close-icon:hover {
+  transform: scale(1.2);
+}
+
+.back-btn {
+  width: 35px;
+  height: 35px;
+  background-color: #1d30598c;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: x-large;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.dropdowns {
+  text-align: center;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+select {
+  border: 2px solid #1D3059;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 30px;
+  max-width: 80%;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.checkbox-container label {
+  margin-left: 5px;
+}
+
+input[type='checkbox'] {
+  width: 25px;
+  height: 25px;
+  flex: none;
+  margin-right: 10px;
+}
+
+.rounded {
+  border-radius: 20px;
+  width: 170px;
+}
+
+.steps-nav {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.button-text {
+  color: white;
+}
+
+.in_switcher, .cm_switcher {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .popup-container {
+    padding: 10px;
+  }
+
+  .popup-header {
+    font-size: 22px;
+  }
+
+  .popup-paragraph {
+    font-size: 10px;
+  }
+
+  .popup-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .popup-login {
+    font-size: 8px;
+  }
+
+  .popup-button {
+    font-size: 18px;
+  }
+
+  .powered-by {
+    font-size: 10px;
+  }
+}

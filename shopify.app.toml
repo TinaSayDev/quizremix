@@ -2,7 +2,7 @@
 
 name = "quiz"
 client_id = "71d081088eaaf10e3b3a4d2b6155aad8"
-application_url = "https://dedicated-consistency-draws-effectively.trycloudflare.com"
+application_url = "https://wrist-gordon-bar-prompt.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,10 +11,10 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://dedicated-consistency-draws-effectively.trycloudflare.com/auth/callback",
-  "https://dedicated-consistency-draws-effectively.trycloudflare.com/auth/shopify/callback",
-  "https://dedicated-consistency-draws-effectively.trycloudflare.com/api/auth/callback",
-  "https://dedicated-consistency-draws-effectively.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://wrist-gordon-bar-prompt.trycloudflare.com/auth/callback",
+  "https://wrist-gordon-bar-prompt.trycloudflare.com/auth/shopify/callback",
+  "https://wrist-gordon-bar-prompt.trycloudflare.com/api/auth/callback",
+  "https://wrist-gordon-bar-prompt.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]

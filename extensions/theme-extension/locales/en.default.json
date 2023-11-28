@@ -1,0 +1,13 @@
+{
+  "ratings": {
+    "stars": {
+      "label": "Ratings"
+    },
+    "freddy": {
+      "label": "Freddy"
+    },
+    "home": {
+      "recommendationText": "Recommended Product!"
+    }
+  }
+}
